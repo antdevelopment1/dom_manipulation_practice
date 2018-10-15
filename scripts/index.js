@@ -10,3 +10,13 @@
 // document.getElementByTagName()
 // document.querySelector()
 // document.querySelectorAll()
+
+
+// Gets the list item by targeting the id highlight
+var tag = document.getElementById("highlight");
+
+// Logs the value saved inside of tag
+console.log(tag);
+
+// Logs the properties associated with tag
+console.dir(tag);
