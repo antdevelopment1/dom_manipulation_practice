@@ -11,7 +11,9 @@
 // document.querySelector()
 // document.querySelectorAll()
 
-
+// ===============================================
+//         Older Ways To Select Elements
+// ===============================================
 // Gets the list item by targeting the id highlight
 var tag = document.getElementById("highlight");
 
@@ -29,5 +31,19 @@ console.log(idTag);
 
 // Logs the properties associated with idTag
 console.dir(idTag);
+
+// Gets the list item by targeting the tag name li
+var tagName = document.getElementsByTagName('li');
+
+// Logs the value saved inside tagName
+console.log(tagName);
+
+// Logs the properties associated with TagName
+console.dir(tagName);
+
+
+// ===============================================
+//         Newer Ways To Select Elements
+// ===============================================
 
  
