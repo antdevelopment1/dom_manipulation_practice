@@ -20,3 +20,14 @@ console.log(tag);
 
 // Logs the properties associated with tag
 console.dir(tag);
+
+// Gets the list item by targeting the id highlight
+var idTag = document.getElementsByClassName('bolded');
+
+// Logs the value saved inside idTag
+console.log(idTag);
+
+// Logs the properties associated with idTag
+console.dir(idTag);
+
+ 
