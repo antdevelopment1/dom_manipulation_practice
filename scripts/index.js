@@ -25,6 +25,7 @@ console.log(tag);
 // Logs the properties associated with tag
 console.dir(tag);
 
+
 // Gets the list item by targeting the id highlight
 var idTag = document.getElementsByClassName('bolded');
 
@@ -33,6 +34,7 @@ console.log(idTag);
 
 // Logs the properties associated with idTag
 console.dir(idTag);
+
 
 // Gets the list item by targeting the tag name li
 var tagName = document.getElementsByTagName('li');
