@@ -1,7 +1,8 @@
 // What is the DOM
 // DOM is the interface between your JavaScript and Html and Css
 // console.dir(document) in the tools list all the properties inside the document
-// Document object model is the root node where everything lives inside of\
+// Document object model is the root node where everything lives inside of
+// THESE ELEMENTS ARE JAVASCRIPT OBJECTS ONCE TARGETED NOT HTML ELEMENTS
 
 
 // 5 Main Methods Covered In This Exercise
@@ -62,4 +63,12 @@ console.log(liTag);
 // All anchor tags that have a class special that are nested inside of an li is totally valid
 // This line of code doesn't exsist in our html to be referenced anywhere but make a mental note that this is valid
 // This will return null
-// var li = document.querySelector("li a.special")
+// var li = document.querySelector("li a.special");
+
+// Note: You can still use querySelectorAll even if there is only one li element to choose from. 
+
+// Targets all li elements
+var lis = document.querySelectorAll('li');
+
+// Logs the value of all the li's
+console.log(lis);
