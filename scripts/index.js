@@ -17,6 +17,7 @@ player1.addEventListener('click', function() {
         player1Score++;
         if (player1Score === winningScore) {
             player1Span.classList.add('winner');
+            player2Span.classList.add('loser');
             gameOver = true;
         }
     }
@@ -28,6 +29,7 @@ player2.addEventListener('click', function() {
         player2Score++;
         if (player2Score === winningScore) {
             player2Span.classList.add('winner');
+            player1Span.classList.add('loser');
             gameOver = true;
         }
     }
@@ -45,6 +47,8 @@ function resetGame() {
     player2Span.textContent = 0;
     player1Span.classList.remove('winner');
     player2Span.classList.remove('winner');
+    player1Span.classList.remove('loser');
+    player2Span.classList.remove('loser');
     gameOver = false;
 }
 
