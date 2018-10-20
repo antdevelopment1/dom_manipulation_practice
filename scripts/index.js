@@ -1,31 +1,12 @@
-// var button = document.querySelector('[data-button]');
-// var isPurple = false;
-// button.addEventListener('click', function() {
-//     if (isPurple) {
-//         document.body.style.background = 'white';
-//         isPurple = false;
-//     } else {
-//         document.body.style.background = 'purple';
-//         isPurple = true;
-//     } 
-// })
+var player1 = document.querySelector('[data-player1]');
+var player2 = document.querySelector('[data-player2]');
+var reset = document.querySelector('[data-reset]');
+var player1Span = document.querySelector('[data-player1-span]');
+var player2Span = document.querySelector('[data-player2-span]');
+player1Score = 0;
+player2Score = 0;
+var gameOver = false;
+var winningScore = 5;
+resetAll = 0;
 
-// or
 
-// var button = document.querySelector('[data-button]');
-// var isPurple = false;
-// button.addEventListener('click', function() {
-//     if (isPurple) {
-//         document.body.style.background = 'white';
-//     } else {
-//         document.body.style.background = 'purple';
-//     } 
-//     isPurple = !isPurple;
-// })
-
-// or
-
-var button = document.querySelector('[data-button]');
-button.addEventListener('click', function() {
-    document.body.classList.toggle("container"); 
-})
