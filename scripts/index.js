@@ -35,6 +35,10 @@ player2.addEventListener('click', function() {
 });
 
 reset.addEventListener('click', function() {
+    resetGame();
+});
+
+function resetGame() {
     player1Score = 0;
     player2Score = 0;
     player1Span.textContent = 0;
@@ -42,11 +46,15 @@ reset.addEventListener('click', function() {
     player1Span.classList.remove('winner');
     player2Span.classList.remove('winner');
     gameOver = false;
-});
+}
 
 // Uses change when there is any kind of change in the input field as opposed to watching for a click.
 numInput.addEventListener('change', function () {
-    winningScoreDisplay.textContent = "Value Changed";
+    winningScoreDisplay.textContent = this.value;
+    winningScore = Number(this.value);
+    resetGame();
 });
+
+
 
 
