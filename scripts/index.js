@@ -3,6 +3,9 @@ var player2 = document.querySelector('[data-player2]');
 var reset = document.querySelector('[data-reset]');
 var player1Span = document.querySelector('[data-player1-span]');
 var player2Span = document.querySelector('[data-player2-span]');
+var winningScoreDisplay = document.querySelector('p span');
+var para = document.querySelector('p')
+var numInput = document.querySelector('input');
 player1Score = 0;
 player2Score = 0;
 var gameOver = false;
@@ -18,7 +21,7 @@ player1.addEventListener('click', function() {
         }
     }
     player1Span.innerHTML = player1Score; 
-})
+});
 
 player2.addEventListener('click', function() {
     if (!gameOver) {
@@ -29,7 +32,7 @@ player2.addEventListener('click', function() {
         }
     }
     player2Span.innerHTML = player2Score; 
-})
+});
 
 reset.addEventListener('click', function() {
     player1Score = 0;
@@ -39,6 +42,11 @@ reset.addEventListener('click', function() {
     player1Span.classList.remove('winner');
     player2Span.classList.remove('winner');
     gameOver = false;
-})
+});
+
+// Uses change when there is any kind of change in the input field as opposed to watching for a click.
+numInput.addEventListener('change', function () {
+    winningScoreDisplay.textContent = "Value Changed";
+});
 
 
