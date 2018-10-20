@@ -19,6 +19,18 @@ player1.addEventListener('click', function() {
     player1Span.innerHTML = player1Score; 
 })
 
+player2.addEventListener('click', function() {
+    if (!gameOver) {
+        player2Score++;
+        if (player2Score === winningScore) {
+            gameOver = true;
+        }
+    }
+    player2Span.innerHTML = player2Score; 
+})
 
+reset.addEventListener('click', function() {
+    alert('reset');
+})
 
 
