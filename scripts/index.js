@@ -9,4 +9,16 @@ var gameOver = false;
 var winningScore = 5;
 resetAll = 0;
 
+player1.addEventListener('click', function() {
+    if (!gameOver) {
+        player1Score++;
+        if (player1Score === winningScore) {
+            gameOver = true;
+        }
+    }
+    player1Span.innerHTML = player1Score; 
+})
+
+
+
 
